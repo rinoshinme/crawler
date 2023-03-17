@@ -16,9 +16,9 @@ from crawler.nsfw import DigitsSite
 from crawler.nsfw import QW73
 
 
-ROOT_DIR = r'F:\Data\crawler_data'
-
-
+# ROOT_DIR = r'F:\Data\crawler_data'
+# ROOT_DIR = r'G:\crawler_data'
+ROOT_DIR = r'../crawler_data'
 # -------------------------------------------------------------------
 # basic downloaders
 def download_hu4(category):
@@ -106,6 +106,10 @@ def test_hu4video_mp():
         t.start()
 
 
+def test_hu4video_av():
+    download_hu4video('av', '')
+
+
 def run():
     # crawler = HentaiCrawler('./data/hentai_crawler')
     # crawler.crawl_tag('naked')
@@ -114,9 +118,10 @@ def run():
 
     # test_hu4_mp()
     # test_digits_mp()
-    # test_qw73_mp()
+    test_qw73_mp()
     # test_hu4video_mp()
-    download_hu4video_real('av_qbyc')
+    # test_hu4video_av()
+    # download_hu4video_real('movie_youma')
 
 
 if __name__ == '__main__':

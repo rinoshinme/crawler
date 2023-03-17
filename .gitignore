@@ -18,3 +18,7 @@ image_data_fzdm/
 images/
 
 *.json
+*.txt
+*.jpg
+*.png
+*.jpeg
